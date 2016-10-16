@@ -134,7 +134,7 @@ Busmonitor_to_CEMI (uchar code, const L_Busmonitor_PDU & p, int no)
   CArray pdu;
   pdu.resize (p.pdu () + 5);
   pdu[0] = code;
-  pdu[1] = 4;
+  pdu[1] = 3;
   pdu[2] = 3;
   pdu[3] = 1;
   pdu[4] = no & 0x7;
